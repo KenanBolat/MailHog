@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  app :
+    build:
+      context : .
+    environment: 
+      - MH_SMTP_BIND_ADDR=0.0.0.0:587
+    ports: 
+      - 587:587
+      - 8025:8025
